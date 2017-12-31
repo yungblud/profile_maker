@@ -21,8 +21,9 @@ EOF
 
 MASK = PATTERN.split(//).map{|c| c == 'X'}
 
-DAYSTART = Date.new(2021,9,19)
-raise unless DAYSTART.wday == 0 #
+DAYSTART = Date.new(2018,1,1)
+# puts DAYSTART.wday
+raise unless DAYSTART.wday == 1 #
 DAYEND   = DAYSTART + (PATTERN.size*8)
 
 
